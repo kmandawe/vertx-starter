@@ -36,9 +36,9 @@ public class MainVerticle extends AbstractVerticle {
               }
             });
     vertx.setPeriodic(
-        500,
+        100,
         id -> {
-          LOG.debug("" + new Random().nextDouble());
+          LOG.info("" + new Random().nextDouble());
         });
   }
 }
